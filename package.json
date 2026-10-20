@@ -1,0 +1,38 @@
+{
+  "name": "hero-handwerk-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that connects AI assistants (Claude, ChatGPT, Cursor, ...) to HERO Handwerkersoftware: customers, projects, documents, appointments and lead creation.",
+  "type": "module",
+  "bin": {
+    "hero-handwerk-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "npm run build && node test/run-tests.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "hero",
+    "hero-software",
+    "handwerk",
+    "handwerkersoftware",
+    "claude",
+    "ai-agent"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0"
+  }
+}
